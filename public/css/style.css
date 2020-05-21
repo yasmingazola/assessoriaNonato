@@ -1,0 +1,167 @@
+@import url(./base/normalize.css);
+/*Header*/
+.header-container {
+  width: 94%;
+  margin: 0 auto; }
+
+.header-logo {
+  width: 220px;
+  height: 50px; }
+
+.header-padrao {
+  background-color: #DCDCDC;
+  padding: 20px 0;
+  border-top: 5px solid #ffa333;
+  height: 90px; }
+  @media (max-width: 980px) {
+    .header-padrao {
+      height: auto; } }
+
+@media (max-width: 980px) {
+  .header-titulo h1 {
+    max-width: 50%;
+    margin: 0 auto; } }
+
+@media (max-width: 980px) {
+  .header-padrao h1 img {
+    max-width: 100%;
+    margin: .5em auto;
+    display: block; } }
+
+.header-padrao .header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  @media (max-width: 768px) {
+    .header-padrao .header-container {
+      flex-direction: column;
+      align-items: initial;
+      text-align: center; } }
+
+.header-nav {
+  display: flex; }
+  @media (max-width: 768px) {
+    .header-nav {
+      flex-direction: column; } }
+
+.header-titulo {
+  font-weight: bold;
+  font-size: 2em;
+  margin-bottom: 20px;
+  font-family: 'Halant', serif; }
+
+.header-titulo a {
+  text-decoration: none;
+  color: #4F4F4F; }
+
+.header-nav-link {
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-right: 5px;
+  color: #4F4F4F;
+  background-color: #DCDCDC;
+  text-decoration: none;
+  transition: .5s;
+  display: block;
+  border-bottom: 1px solid #ffa333; }
+
+/*Home*/
+.main-index {
+  margin-bottom: 20px; }
+
+.cards-home {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px; }
+  @media (max-width: 768px) {
+    .cards-home {
+      display: flex;
+      flex-direction: column;
+      align-items: center; } }
+
+#card-home {
+  width: 20%;
+  text-align: center;
+  margin: 1em 0 0 1.4em;
+  padding-bottom: 2em;
+  justify-content: space-between; }
+  @media (max-width: 768px) {
+    #card-home {
+      width: 70%; } }
+
+.card-home-icone {
+  padding: 2rem;
+  color: #2B86B3; }
+
+#card-home, .card-home-body {
+  border-color: #ffa333; }
+
+.card-home-body {
+  display: flex;
+  flex-direction: column; }
+
+#card-home-header {
+  background-color: #ffa333;
+  color: white;
+  font-family: 'Halant', serif; }
+
+/*Alunos*/
+.main-alunos {
+  margin-bottom: 20px; }
+
+.menu-alunos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  margin-right: 5px;
+  margin-left: 5px; }
+  @media (max-width: 980px) {
+    .menu-alunos {
+      display: flex;
+      justify-content: space-around; } }
+
+.titulo-principal {
+  font-family: 'Halant', serif;
+  color: #4F4F4F; }
+
+.form-inline-busca {
+  display: flex;
+  width: 30%;
+  padding: 15px 0; }
+  @media (max-width: 980px) {
+    .form-inline-busca {
+      display: flex;
+      width: 60%;
+      padding: 5px; }
+      .form-inline-busca .btn-buscar {
+        margin-left: 5px; } }
+
+/*Card*/
+.card-aluno {
+  margin-bottom: 5px;
+  border-top: 3px solid #ffa333; }
+
+.card-aluno-title {
+  font-family: 'Halant', serif;
+  color: #4F4F4F; }
+
+.card-aluno-header {
+  background-color: #DCDCDC; }
+
+.card-aluno-body {
+  display: flex;
+  justify-content: space-around; }
+  @media (max-width: 980px) {
+    .card-aluno-body {
+      display: flex;
+      flex-direction: column; } }
+
+.check-pagamento {
+  display: flex;
+  flex-direction: column; }
+
+.card-aluno-botoes {
+  margin-left: 10px; }
+
+/*# sourceMappingURL=style.css.map */

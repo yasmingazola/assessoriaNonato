@@ -1,0 +1,74 @@
+/*Alunos*/
+.main-alunos {
+	margin-bottom: 20px;
+}
+
+.menu-alunos {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+
+	@media (max-width: 980px){
+		display: flex;
+		justify-content: space-around;
+	}
+}
+
+.titulo-principal {
+	@include fonte-padrao;
+	color: $cor-padrao;
+}
+
+.form-inline-busca {
+	display: flex;
+	width: 30%;
+	padding: 15px 0;
+
+	@media (max-width: 980px){
+		display: flex;
+		width: 60%;
+		padding: 5px;
+
+		.btn-buscar {
+			margin-left: 5px;
+		}
+	}
+
+}
+
+/*Card*/
+.card-aluno {
+	margin-bottom: 5px;
+	border-top: 3px solid $cor-laranja;
+}
+
+.card-aluno-title {
+	@include fonte-padrao;
+	color: $cor-padrao;
+}
+
+.card-aluno-header {
+	background-color: $cor-auxiliar;
+}
+
+.card-aluno-body {
+	display: flex;
+	justify-content: space-around;
+
+	@media (max-width: 980px) {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+.check-pagamento {
+	display: flex;
+	flex-direction: column;
+}
+
+.card-aluno-botoes {
+	margin-left: 10px;
+}

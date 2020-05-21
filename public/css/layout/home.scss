@@ -1,0 +1,49 @@
+/*Home*/
+.main-index {
+	margin-bottom: 20px;
+}
+
+.cards-home {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 30px;
+
+	@media (max-width: 768px) {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+#card-home {
+	width: 20%;
+	text-align: center;
+	margin: 1em 0 0 1.4em;
+ 	padding-bottom: 2em;
+ 	justify-content: space-between;
+ 	
+ 	@media (max-width: 768px) {
+		width: 70%;
+	
+	}
+}
+
+.card-home-icone {
+	padding: 2rem;
+	color: $cor-detalhe;
+}
+
+#card-home, .card-home-body {
+	border-color: $cor-laranja;
+}
+
+.card-home-body {
+	display: flex;
+	flex-direction: column;
+}
+
+#card-home-header {
+	background-color: $cor-laranja;
+	color: white;
+	@include fonte-padrao;
+}

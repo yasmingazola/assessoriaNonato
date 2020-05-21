@@ -1,12 +1,47 @@
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Titulo</title>
+  <%- include ('./all/head', {titulo: 'Home'}) -%>
 </head>
-<body>  
 
-  <h1>Ola mozao!</h1>
-  
+<header>
+	<%- include ('./all/header') -%>
+</header>
+
+
+<body>  
+<main class="main-index">
+
+  <section class="row cards-home">
+    <div class="card" id="card-home">
+			<h2 class="display-3 card-home-icone"><i class="fas fa-graduation-cap"></i></h2>
+		  <h5 class="card-header" id="card-home-header">Alunos</h5>
+		  <div class="card-home-body">
+		    <p class="card-home-text">Acesse os alunos.</p>
+		    <a href="#" class="btn btn-outline-secondary" id="card-home-botao">Acessar</a>
+		  </div>
+		</div>
+
+		<div class="card" id="card-home">
+			<h2 class="display-3 card-home-icone"><i class="fas fa-running"></i></h2>
+		  <h5 class="card-header" id="card-home-header">Corridas</h5>
+		  <div class="card-home-body">
+		    <p class="card-home-text">Organize uma corrida!</p>
+		    <a href="#" class="btn btn-outline-secondary" id="card-home-botao">Acessar</a>
+		  </div>
+		</div>
+
+		<div class="card" id="card-home">
+			<h2 class="display-3 card-home-icone"><i class="fas fa-hand-holding-usd"></i></h2>
+		  <h5 class="card-header" id="card-home-header">Mensalidade</h5>
+		  <div class="card-home-body">
+		    <p class="card-home-text">Controle de pagamento.</p>
+		    <a href="#" class="btn btn-outline-secondary" id="card-home-botao">Acessar</a>
+		  </div>
+		</div>
+
+ 	</section>
+
+
+</main>
 </body>
 </html>
