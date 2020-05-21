@@ -164,4 +164,71 @@
 .card-aluno-botoes {
   margin-left: 10px; }
 
+/*Planilha*/
+.planilha {
+  display: flex;
+  justify-content: space-around; }
+
+.planilha-nova {
+  width: 70%;
+  margin-bottom: .5em;
+  table-layout: fixed; }
+
+.planilha-nova td, th {
+  padding: .7em;
+  margin: 0;
+  border: 1px solid #ccc;
+  text-align: justify; }
+
+.planilha-nova th {
+  font-weight: bold;
+  background-color: #EEE;
+  text-align: center; }
+
+/*Mensalidade*/
+.main-mensalidade {
+  margin-bottom: 20px; }
+
+.menu-mensalidade {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  margin-right: 5px;
+  margin-left: 5px; }
+  @media (max-width: 980px) {
+    .menu-mensalidade {
+      display: flex;
+      justify-content: space-around; } }
+
+.menu-mensalidade-2 {
+  border-top: 3px solid #ffa333;
+  padding: 10px; }
+
+/*Cards mensalidade*/
+.mensalidade-cards {
+  border-top: 3px solid #ffa333;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+#mensalidade-card {
+  border: 1px solid #ffa333;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
+  height: 90px;
+  padding: 20px;
+  border-radius: 30px;
+  margin-top: 20px; }
+
+.mensalidade-card-title {
+  font-family: 'Halant', serif;
+  color: #4F4F4F; }
+
+.icone-mensalidade {
+  color: green; }
+
 /*# sourceMappingURL=style.css.map */

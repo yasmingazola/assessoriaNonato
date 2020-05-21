@@ -1,0 +1,27 @@
+/*Planilha*/
+.planilha {
+	display: flex;
+	justify-content: space-around;
+}
+
+.planilha-nova{
+	width: 70%;
+	margin-bottom: .5em;
+    table-layout: fixed;
+
+}
+
+.planilha-nova td, th {
+	padding: .7em;
+	margin: 0;
+	border: 1px solid #ccc;
+	text-align: justify;
+}
+
+.planilha-nova th{
+	font-weight: bold;
+	background-color: #EEE;
+	text-align: center;
+}
+
+

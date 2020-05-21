@@ -9,4 +9,8 @@ router.get('/alunos', (req, res) => {
   res.render('alunos/index');
 });
 
+router.get('/mensalidade', (req, res) => {
+  res.render('mensalidade');
+});
+
 module.exports = router;

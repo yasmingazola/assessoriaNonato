@@ -13,7 +13,7 @@
 <body>  
 <main class="main-alunos">
 	<section class="menu-alunos">
-		<h2 onclick="bla()" class="titulo-principal">Alunos</h2>
+		<h2 class="titulo-principal"><i class="fas fa-graduation-cap"></i> Alunos</h2>
 
 		<form class="form-inline-busca">
 	    <input class="form-control mr-sm-2" type="search" placeholder="Buscar Aluno" aria-label="Search">
@@ -27,16 +27,16 @@
 		  <div class="card-aluno-header card-header text-center ">
 		    <ul class="card-aluno-nav nav nav-tabs card-header-tabs ">
 		      <li class="card-aluno-nav-item nav-item ">
-		        <a class="card-aluno-nav-link nav-link active text-secondary" id="1" href="#">Ficha Pessoal</a>
+		        <a class="card-aluno-nav-link nav-link active text-secondary"  id="fichaPessoal" href="#">Ficha Pessoal</a>
 		      </li>
 		      <li class="card-aluno-nav-item nav-item ">
-		        <a class="card-aluno-nav-link nav-link text-secondary" id="2" href="#">Planilha Atual</a>
+		        <a class="card-aluno-nav-link nav-link text-secondary" onclick="bla()" id="planilhaAtual" href="#">Planilha Atual</a>
 		      </li>
 		      <li class="nav-item card-alunos-nav-item">
-		        <a class="card-aluno-nav-link nav-link text-secondary" href="#">Nova Planilha</a>
+		        <a class="card-aluno-nav-link nav-link text-secondary" id="novaPlanilha" href="#">Nova Planilha</a>
 		      </li>
 		      <li class="nav-item card-aluno-nav-item">
-		        <a class="card-aluno-nav-link nav-link text-secondary" href="#">Antigas</a>
+		        <a class="card-aluno-nav-link nav-link text-secondary" id="antigasPlanilhas" href="#">Antigas</a>
 		      </li>
 		    </ul>
 		  </div>
@@ -75,54 +75,7 @@
 		</article>
 		
 		<!--Próximo card-->
-		<article class="card-aluno">
-			<div class="card-header text-center">
-		    <ul class="nav nav-tabs card-header-tabs">
-		      <li class="nav-item">
-		        <a class="nav-link active text-secondary" href="#">Ficha Pessoal</a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link text-secondary" href="#">Planilha Atual</a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link text-secondary" href="#">Nova Planilha</a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link text-secondary" href="#">Antigas</a>
-		      </li>
-		    </ul>
-		  </div>
-
-		  <div class="card-body">
-		    <h5 class="card-title">Nome do Aluno</h5>
-
-		    <ul class="card-info">
-		    	<li>Nome: ...</li>
-		    	<li>Telefone: ...</li>
-		    	<li>CPF: ...</li>
-		    </ul>
-
-		    <ul>
-		    	<li>Data de nascimento: ...</li>
-		    	<li>E-mail: ...</li>
-		    	<li>Camiseta tamanho: ...</li>
-		    </ul>
-
-		    <div class="check-pagamento">
-		    	<label>
-		    		<input type="checkbox" aria-label="Checkbox for following text input"> Mensalidade
-		    	</label>
-		    	<label>
-		    		<input type="checkbox" aria-label="Checkbox for following text input"> Kit Entregue
-		    	</label>
-		  	</div>
-			</div>
-		
-			<div class="botoes-card">   
-		  	<a href="#" class="btn btn-outline-secondary">Editar</a>
-		  	<a href="#" class="btn btn-outline-secondary">Adicionar à corrida</a>
-			</div>
-		</article>
+	
 
 	</section>
 
@@ -132,11 +85,15 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
 	function bla() {
-		$('#1').removeClass('active');
-		$('#2').addClass('active');
+		$('#fichaPessoal').removeClass('active');
+		$('#planilhaAtual').addClass('active');
 
-		$('#conteudo').html('meunovoconteudo');
+		$('#conteudo').html();
+
 	}
+</script> 
 
-</script>
+<%- include ('./planilha') -%>
+
+
 </html>

@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+  <%- include ('./all/head', {titulo: 'Home'}) -%>
+</head>
+
+<header>
+	<%- include ('./all/header') -%>
+</header>
+
+<body>
+<main class="main-mensalidade">
+	<section class="menu-mensalidade">
+		<h2 class="titulo-principal"><i class="fas fa-hand-holding-usd"></i> Mensalidade</h2>
+
+		<form class="form-inline-busca">
+	    <input class="form-control mr-sm-2" type="search" placeholder="Buscar Aluno" aria-label="Search">
+	    <button class="btn btn-outline-secondary my-2 my-sm-0 btn-buscar" type="submit">Buscar</button>
+	  </form>
+	</section>
+
+	<section>
+		<article class="menu-mensalidade-2 text-center">
+		    <ul class="menu-mensalidade-nav nav nav-tabs">
+		      <li class="menu-mensalidade-nav-item nav-item ">
+		        <a class="menu-mensalidade-nav-link nav-link active text-secondary"  id="fichaPessoal" href="#">Mês Atual</a>
+		      </li>
+		      <li class="menu-mensalidade-nav-item nav-item ">
+		        <a class="menu-mensalidade-nav-link nav-link text-secondary" id="planilhaAtual" href="#">Meses Anteriores</a>
+		      </li>
+	
+		    </ul>
+		 </article>
+	</section>
+
+	<section class="mensalidade-cards">
+		<article class='card' id='mensalidade-card'>				
+			<h4 class='mensalidade-card-title'><i class="fas fa-comment-dollar"></i> Nome</h4>
+
+			<div class="mensalidade-card-body">
+				<div class="check-pagamento">
+		    	<label>
+		    		<input type="checkbox" aria-label="Checkbox for following text input"> <i class="fas fa-check-circle icone-mensalidade"></i>
+		    	</label>
+		    </div>
+			</div>
+		</article>
+
+		<article class='card' id='mensalidade-card'>				
+			<h4 class='mensalidade-card-title'><i class="fas fa-comment-dollar"></i> Nome</h4>
+
+			<div class="mensalidade-card-body">
+				<div class="check-pagamento">
+		    	<label>
+		    		<input type="checkbox" aria-label="Checkbox for following text input"> <i class="fas fa-check-circle icone-mensalidade"></i>
+		    	</label>
+		    </div>
+			</div>
+		</article>
+
+		
+	</section>
+
+
+</main>  
+</body>
+
+</html>
