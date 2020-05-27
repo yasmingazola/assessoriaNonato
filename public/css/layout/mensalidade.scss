@@ -14,12 +14,35 @@
 	@media (max-width: 980px){
 		display: flex;
 		justify-content: space-around;
+		flex-direction: column;
 	}
 }
 
-.menu-mensalidade-2 {
-	border-top: 3px solid $cor-laranja;
-	padding: 10px;
+.menu-mensalidade-principal {
+	display: flex;
+	align-items: center;
+	padding: 1rem;
+	width: 50%;
+	justify-content: space-around;
+
+	@media (max-width: 980px){
+		width: 100%;
+		justify-content: space-around;
+	}
+}
+
+#menu-mensalidade-botao-drop {
+	margin-right: 2rem;
+}
+
+.menu-mensalidade-busca {
+	display: flex;
+	padding: 1rem;
+	width: 50%;
+
+	@media (max-width: 980px){
+		width: 100%;
+	}
 }
 
 /*Cards mensalidade*/

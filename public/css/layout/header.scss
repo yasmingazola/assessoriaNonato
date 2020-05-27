@@ -80,3 +80,14 @@
 	
 	border-bottom: 1px solid $cor-laranja;
 }
+
+.header-nav-link:hover {
+	text-decoration: none;
+	color: $cor-detalhe;
+	border-bottom: 1px solid $cor-detalhe;
+}
+
+.header-nav-link:active {
+	color: $cor-detalhe;
+	border-bottom: 1px solid $cor-detalhe;
+}

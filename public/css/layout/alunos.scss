@@ -20,6 +20,7 @@
 .titulo-principal {
 	@include fonte-padrao;
 	color: $cor-padrao;
+	margin: 0;
 }
 
 .form-inline-busca {

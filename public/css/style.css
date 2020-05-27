@@ -65,6 +65,15 @@
   display: block;
   border-bottom: 1px solid #ffa333; }
 
+.header-nav-link:hover {
+  text-decoration: none;
+  color: #2B86B3;
+  border-bottom: 1px solid #2B86B3; }
+
+.header-nav-link:active {
+  color: #2B86B3;
+  border-bottom: 1px solid #2B86B3; }
+
 /*Home*/
 .main-index {
   margin-bottom: 20px; }
@@ -123,7 +132,8 @@
 
 .titulo-principal {
   font-family: 'Halant', serif;
-  color: #4F4F4F; }
+  color: #4F4F4F;
+  margin: 0; }
 
 .form-inline-busca {
   display: flex;
@@ -199,11 +209,30 @@
   @media (max-width: 980px) {
     .menu-mensalidade {
       display: flex;
+      justify-content: space-around;
+      flex-direction: column; } }
+
+.menu-mensalidade-principal {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  width: 50%;
+  justify-content: space-around; }
+  @media (max-width: 980px) {
+    .menu-mensalidade-principal {
+      width: 100%;
       justify-content: space-around; } }
 
-.menu-mensalidade-2 {
-  border-top: 3px solid #ffa333;
-  padding: 10px; }
+#menu-mensalidade-botao-drop {
+  margin-right: 2rem; }
+
+.menu-mensalidade-busca {
+  display: flex;
+  padding: 1rem;
+  width: 50%; }
+  @media (max-width: 980px) {
+    .menu-mensalidade-busca {
+      width: 100%; } }
 
 /*Cards mensalidade*/
 .mensalidade-cards {
